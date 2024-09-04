@@ -16,7 +16,7 @@ export default function Header({style, alt} : Props) {
       })}
     >
       <a href="/" className="logo">
-        <strong>Forty</strong> <span>by HTML5 UP</span>
+        <strong>Henry</strong> <span>Showcasing My Self-Taught Journey</span>
       </a>
       <nav>
         <a href="#menu">Menu</a>

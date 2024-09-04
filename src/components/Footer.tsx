@@ -32,7 +32,7 @@ export default function Footer() {
         <ul className="copyright">
           <li>&copy; Untitled</li>
           <li>
-            Design: <a href="https://html5up.net">HTML5 UP</a>
+            Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>
           </li>
         </ul>
       </div>

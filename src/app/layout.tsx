@@ -9,7 +9,7 @@ import { Metadata, Viewport } from 'next'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Forty by HTML5 UP',
+  title: 'About Me',
   description: 'My portfolio using the template from "Forty by HTML5 UP"',
 }
 

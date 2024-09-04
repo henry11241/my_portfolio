@@ -1,6 +1,6 @@
-import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
@@ -12,18 +12,18 @@ export default function Home() {
       <section id="banner" className="major">
         <div className="inner">
           <header className="major">
-            <h1>Hi, my name is Forty</h1>
+            <h1>Hi, my name is Henry</h1>
           </header>
           <div className="content">
             <p>
-              A responsive site template designed by HTML5 UP
+              A self-taught developer exploring the open source world and
               <br />
-              and released under the Creative Commons.
+              continually learning through new projects and experiences.
             </p>
             <ul className="actions">
               <li>
                 <a href="#one" className="button next scrolly">
-                  Get Started
+                  Brief Intro
                 </a>
               </li>
             </ul>
@@ -42,10 +42,10 @@ export default function Home() {
             <header className="major">
               <h3>
                 <a href="/landing" className="link">
-                  Aliquam
+                  Courses
                 </a>
               </h3>
-              <p>Ipsum dolor sit amet</p>
+              <p>The online courses I take</p>
             </header>
           </article>
           <article>
@@ -55,10 +55,10 @@ export default function Home() {
             <header className="major">
               <h3>
                 <a href="/landing" className="link">
-                  Tempus
+                  Background
                 </a>
               </h3>
-              <p>feugiat amet tempus</p>
+              <p>My personality, College major and previous job</p>
             </header>
           </article>
           <article>
@@ -68,10 +68,13 @@ export default function Home() {
             <header className="major">
               <h3>
                 <a href="/landing" className="link">
-                  Magna
+                  Sports and Gaming
                 </a>
               </h3>
-              <p>Lorem etiam nullam</p>
+              <p>
+                Where the self-taught journey begins <br /> And the true passion
+                of life
+              </p>
             </header>
           </article>
           <article>
@@ -81,10 +84,10 @@ export default function Home() {
             <header className="major">
               <h3>
                 <a href="/landing" className="link">
-                  Ipsum
+                  Struggles
                 </a>
               </h3>
-              <p>Nisl sed aliquam</p>
+              <p>What took me so long and the keypoints that I break through</p>
             </header>
           </article>
           <article>
@@ -94,10 +97,10 @@ export default function Home() {
             <header className="major">
               <h3>
                 <a href="/landing" className="link">
-                  Consequat
+                  Knowledge
                 </a>
               </h3>
-              <p>Ipsum dolor sit amet</p>
+              <p>The knowlegde resouces that benefits my personal growth</p>
             </header>
           </article>
           <article>
@@ -107,10 +110,10 @@ export default function Home() {
             <header className="major">
               <h3>
                 <a href="/landing" className="link">
-                  Etiam
+                  ChatGPT
                 </a>
               </h3>
-              <p>Feugiat amet tempus</p>
+              <p>Huge assistant that helps a lot in thought process</p>
             </header>
           </article>
         </section>
@@ -119,16 +122,22 @@ export default function Home() {
         <section id="two">
           <div className="inner">
             <header className="major">
-              <h2>Massa libero</h2>
+              <h2>About this site</h2>
             </header>
             <p>
-              Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-              libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-              Pellentesque condimentum sem. In efficitur ligula tate urna.
-              Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-              Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-              libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra
-              et feugiat tempus.
+              This is the website I built after reading the article from{" "}
+              <a
+                href="https://dev.to/itzsaga/portfolio-site-how-to-for-new-developers-537p"
+                target="_blank"
+              >
+                dev.to
+              </a>
+              . <br />
+              Taking the template that design and created by{" "}
+              <a href="https://html5up.net/" target="_blank">
+                HTML5 UP
+              </a>
+              .
             </p>
             <ul className="actions">
               <li>
@@ -147,5 +156,5 @@ export default function Home() {
       {/* <!-- Footer --> */}
       <Footer />
     </>
-  )
+  );
 }

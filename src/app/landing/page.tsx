@@ -14,7 +14,7 @@ export default function Landing() {
       <section id="banner" className="style2">
         <div className="inner">
           <span className="image">
-            <img src="images/pic07.jpg" alt="" />
+            <img src="/images/bg_pic02.jpg" alt="" />
           </span>
           <header className="major">
             <h1>Landing</h1>
