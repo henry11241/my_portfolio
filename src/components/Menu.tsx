@@ -6,10 +6,10 @@ export default function Menu() {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/landing">Landing</a>
+          <a href="/landing">About Me</a>
         </li>
         <li>
-          <a href="/generic">Generic</a>
+          <a href="/generic">Code Learning Path</a>
         </li>
         <li>
           <a href="/elements">Elements</a>

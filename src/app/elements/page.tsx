@@ -2,6 +2,11 @@ import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Menu from '@/components/Menu'
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Elements",
+};
 
 export default function Elements() {
   return (

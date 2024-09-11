@@ -1,28 +1,23 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Script from 'next/script'
-import { cn } from '@/lib/utils'
-import Menu from '@/components/Menu'
-import PreloadHandler from '@/components/PreloadHandler'
-import { Metadata, Viewport } from 'next'
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Script from "next/script";
+import { cn } from "@/lib/utils";
+import Menu from "@/components/Menu";
+import PreloadHandler from "@/components/PreloadHandler";
+import { Viewport } from "next";
 
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'About Me',
-  description: 'My portfolio using the template from "Forty by HTML5 UP"',
-}
+const inter = Inter({ subsets: ["latin"] });
 
 export const viewport: Viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
   userScalable: false,
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -32,7 +27,7 @@ export default function RootLayout({
           <link rel="stylesheet" href="assets/css/noscript.css" />
         </noscript>
       </head>
-      <body className={cn(inter.className, 'is-preload')}>
+      <body className={cn(inter.className, "is-preload")}>
         <PreloadHandler />
         <div id="wrapper">
           <Menu />
@@ -49,5 +44,5 @@ export default function RootLayout({
       <Script src="assets/js/util.js" />
       <Script src="assets/js/main.js" />
     </html>
-  )
+  );
 }

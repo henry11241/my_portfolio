@@ -1,6 +1,12 @@
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home Page",
+  description: 'My portfolio using the template from "Forty by HTML5 UP"',
+};
 
 export default function Home() {
   return (
@@ -19,11 +25,13 @@ export default function Home() {
               A self-taught developer exploring the open source world and
               <br />
               continually learning through new projects and experiences.
+              <br />
+              These are the topics I'm going to talk about.
             </p>
             <ul className="actions">
               <li>
                 <a href="#one" className="button next scrolly">
-                  Brief Intro
+                  Get Stated
                 </a>
               </li>
             </ul>
@@ -55,10 +63,10 @@ export default function Home() {
             <header className="major">
               <h3>
                 <a href="/landing" className="link">
-                  Background
+                  Career Path
                 </a>
               </h3>
-              <p>My personality, College major and previous job</p>
+              <p>College major and previous job</p>
             </header>
           </article>
           <article>
@@ -72,8 +80,9 @@ export default function Home() {
                 </a>
               </h3>
               <p>
-                Where the self-taught journey begins <br /> And the true passion
-                of life
+                Where the self-taught journey begins
+                <br />
+                And what shapes my personality
               </p>
             </header>
           </article>
@@ -136,13 +145,16 @@ export default function Home() {
               Taking the template that design and created by{" "}
               <a href="https://html5up.net/" target="_blank">
                 HTML5 UP
+              </a>{" "}
+              and restructure it using{" "}
+              <a href="https://nextjs.org/" target="_blank">
+                Next.js
               </a>
-              .
             </p>
             <ul className="actions">
               <li>
                 <a href="/landing" className="button next">
-                  Get Started
+                  Dive Deeper
                 </a>
               </li>
             </ul>
