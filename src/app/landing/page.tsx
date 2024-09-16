@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Popup from "@/components/landing/Popup";
+import Popup from "@/components/Popup";
+import GamingCarousel from "@/components/GamingCarousel";
 
 export const metadata: Metadata = {
   title: "About Me",
@@ -13,13 +14,12 @@ export default function Landing() {
       {/* <!-- Header --> */}
       {/* <!-- Note: The "styleN" className below should match that of the banner element. --> */}
       <Header style="style2" alt={true} />
-
       {/* <!-- Banner --> */}
       {/* <!-- Note: The "styleN" className below should match that of the header element. --> */}
       <section id="banner" className="style2">
         <div className="inner">
           <span className="image">
-            <img src="/images/bg_pic02.jpg" alt="" />
+            <img src="/images/banner_bg_pic02.jpg" alt="" />
           </span>
           <header className="major">
             <h1>About Me</h1>
@@ -33,7 +33,6 @@ export default function Landing() {
           </div>
         </div>
       </section>
-
       {/* <!-- Main --> */}
       <div id="main">
         {/* Career Shift section */}
@@ -90,213 +89,113 @@ export default function Landing() {
               <h2>Beyond Coding</h2>
             </header>
             <p>
-              I developed a strong interest in table tennis and gaming during my
-              school days, and I found that when I'm passionate about something
-              and want a deeper understanding, I need to actively seek
-              information online. To excel in a competitive environment, I also
-              need to know how to train effectively and stick to a plan while
-              putting in hard work. Pursuing better performance in these hobbies
-              has benefited my personal life in many ways, from physical aspects
-              like fitness, concentration, and reflexes to mental areas like
-              critical thinking, handling pressure, research, and data analysis.
-              If I ever get stuck and can't find a way to improve, I turn to
-              other resources like books and podcasts. Though my self-taught
-              journey covers different topics, they all connect and grow like a
-              spider web. Click the links below to explore more details.
+              During my school days, I developed a strong interest in table
+              tennis and gaming. This passion motivated me to seek information
+              online, which in turn improved my English reading and
+              comprehension skills. I learned how to train effectively, stick to
+              a plan, and work hard to achieve better performance in these
+              hobbies. This pursuit has positively impacted my life in many
+              ways, enhancing my physical fitness, concentration, and reflexes,
+              as well as my mental skills in critical thinking, problem solving
+              and handling pressure. When I hit a roadblock, I turn to
+              additional resources like books and podcasts for guidance.
+              Although my self-taught journey spans various topics, they all
+              interconnect and evolve, much like a spider's web.
             </p>
             <ul className="actions">
               <li>
-                <a href="#four" className="button scrolly">
-                  More Details Below
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        {/* Sections with popup detail */}
-        <section id="four" className="spotlights">
-          {/* Gaming section  */}
-          <Popup
-            content={{
-              imgSrc: "images/pic08.jpg",
-              title: "Gaming",
-              description:
-                "Gaming has enriched my life by building teamwork, strategy, and focus skills. It serves as both a source of enjoyment and personal development, helping me balance challenges inside and outside the virtual world.",
-              dataPosition: "center center",
-            }}
-          >
-            <section>
-              <div className="inner">
-                <section></section>
-                <p>
-                  <span className="text-[1.75em] font-semibold">Gaming</span>{" "}
-                  has always been more than just a hobby for me—it's a way to{" "}
-                  <b>connect with others</b>, develop important life skills, and{" "}
-                  <b>maintain balance</b> in my daily routine. Whether playing
-                  as a team member, taking on the role of a leader, or acting as
-                  an executor in high-pressure moments, gaming offers a dynamic
-                  environment where I can sharpen my decision-making and
-                  adaptability. Beyond the game itself, it also serves as a
-                  social outlet, allowing me to unwind and enjoy meaningful
-                  interactions, which help balance the demands of everyday life.
-                </p>
-                <div className="row">
-                  <div className="col-6 col-12-small">
-                    <h3 id="content">League of Legend</h3>
-                    <p>
-                      <span className="image left">
-                        <img src="images/pic09.jpg" alt="" />
-                      </span>
-                      League of Legends is a popular multiplayer online battle
-                      arena (MOBA) game where players control champions with
-                      unique abilities to engage in strategic 5v5 matches. Its
-                      popularity meant that I could easily find four other
-                      classmates to queue with during high school. As I spent
-                      more time playing, I began to wonder whether I was simply
-                      chasing the rush from winning games or if I was genuinely
-                      learning something valuable. Although I have to admit it
-                      provided a much-needed dopamine boost to balance the
-                      pressure from the strict Asian education system, I still
-                      found that I improved a lot in the aspect of{" "}
-                      <b>teamwork</b> and <b>comminucation</b>. Maintain a{" "}
-                      <b>positive mindset</b>, stay <b>calm under pressure</b>,
-                      and provide useful information to help the team. Taking
-                      responsibility for decisions, supporting teammates, and
-                      having each other's back became practices I try to apply
-                      beyond the game.
-                    </p>
-                  </div>
-                  <div className="col-6 col-12-small">
-                    <h3>Overwatch, Apex Legend and Valorant</h3>
-                    <p>
-                      <span className="image left">
-                        <img src="images/pic09.jpg" alt="" />
-                      </span>
-                      Overwatch, Apex Legends, and Valorant are popular
-                      first-person shooter (FPS) games where players rely on
-                      quick reflexes, precise aim, and sharp decision-making to
-                      outplay their opponents. As I spent more time with these
-                      games, I noticed how they sharpened my <b>reflexes</b>,
-                      enhanced my concentration, and trained my ability to make
-                      <b>micro-adjustments</b> during intense moments. Each game
-                      demands constant <b>awareness of the surroundings</b> and
-                      quick adaptation to shifting team strategies. Whether
-                      switching between offensive and defensive roles or
-                      executing split-second tactics, these FPS games taught me
-                      to stay <b>focused</b>, <b>remain calm under pressure</b>,
-                      and quickly adapt to new challenges. These experiences not
-                      only honed my gaming skills but also helped me develop a
-                      mindset that can be applied to real-life situations
-                      requiring <b>precision</b> and{" "}
-                      <b>quick decision-making</b>.
-                    </p>
-                  </div>
-
-                  {/* <!-- Break --> */}
-                  <section className="spotlights">
-                    <h3>Path Of Exile</h3>
+                <Popup title="Beyond Coding">
+                  {/* Spotlights */}
+                  <section className="spotlights w-full">
+                    {/* Gaming section */}
                     <section>
+                      {/* Images */}
                       <div className="image">
-                        <img src="images/pic08.jpg" alt="" />
+                        <GamingCarousel />
                       </div>
+                      {/* Content */}
                       <div className="content">
+                        <header>
+                          <h4>Gaming</h4>
+                        </header>
                         <p>
-                          Playing Path of Exile has been an unexpected boost to
-                          my <b>English reading</b> and <b>comprehension</b>{" "}
-                          skills. The game's deep mechanics and complex skill
-                          trees require careful attention to item descriptions
-                          and patch notes, all in English. This has
-                          significantly improved my ability to quickly
-                          understand and absorb new information. Additionally,
-                          the in-game economy mirrors real-world capital
-                          markets, with its intricate trade system teaching me
-                          the value of supply and demand. I learned that
-                          providing rare and high-demand services or items
-                          allows you to gain more value, reinforcing key
-                          economic principles that apply to both the game and
-                          real-world market dynamics.
+                          For me, gaming isn't just a hobby—it's a way to
+                          connect with people, build skills, and keep life
+                          balanced. Whether playing as a team member, taking on
+                          the role of a leader, or acting as an executor in
+                          high-pressure moments, gaming offers a dynamic
+                          environment where I can sharpen my decision-making and
+                          adaptability. Beyond the game itself, it also serves
+                          as a social outlet, allowing me to relax and enjoy
+                          meaningful interactions, which help balance the
+                          demands of everyday life.
+                        </p>
+                      </div>
+                    </section>
+
+                    {/* Table Tennis section */}
+                    <section>
+                      {/* Images */}
+                      <a href="generic.html" className="image">
+                        <img
+                          src="images/pic08.jpg"
+                          alt=""
+                          data-position="center center"
+                        />
+                      </a>
+                      {/* Content */}
+                      <div className="content">
+                        <header className="self-center">
+                          <h4>Table Tennis</h4>
+                        </header>
+                        <p>
+                          I push myself to the limit in this realm, constantly
+                          striving for better performance like a dedicated
+                          craftsman. I focus on every small detail with
+                          precision, starting by observing how my opponent
+                          moves. I predict the ball's curve based on its spin
+                          and speed, and then decide how to respond while
+                          keeping my overall strategy in mind. Whether playing
+                          smart with positioning or making a bold move with a
+                          powerful strike, all within a reaction window of 0.2
+                          to 0.3 seconds, I thrive on the challenge. This
+                          activity has sharpened my focus, reflexes,
+                          self-awareness, and ability to handle pressure. It's
+                          improved my body control, physical fitness, and even
+                          sparked my creativity. The mindset I've developed here
+                          naturally carries over into other areas of my life.
+                        </p>
+                      </div>
+                    </section>
+
+                    {/* Personal Growth section */}
+                    <section>
+                      {/* Images */}
+                      <a href="generic.html" className="image">
+                        <img
+                          src="images/pic08.jpg"
+                          alt=""
+                          data-position="center center"
+                        />
+                      </a>
+                      {/* Content */}
+                      <div className="content">
+                        <header>
+                          <h4>Personal Growth</h4>
+                        </header>
+                        <p>
+                          Things that I I've always got the curiosity and crave
+                          to learn more.
                         </p>
                       </div>
                     </section>
                   </section>
-                </div>
-              </div>
-            </section>
-          </Popup>
-
-          {/* Table Tennis section */}
-          <Popup
-            content={{
-              imgSrc: "images/pic09.jpg",
-              title: "Table Tennis",
-              description: "This is a brief intro for Table Tennis.",
-              dataPosition: "top center",
-            }}
-          >
-            <section>
-              <div className="inner">
-                <header className="major">
-                  <h2>Beyond Coding</h2>
-                </header>
-                <p>
-                  I developed a strong interest in table tennis and gaming
-                  during my school days, and I found that when I'm passionate
-                  about something and want a deeper understanding, I need to
-                  actively seek information online. To excel in a competitive
-                  environment, I also need to know how to train effectively and
-                  stick to a plan while putting in hard work. Pursuing better
-                  performance in these hobbies has benefited my personal life in
-                  many ways, from physical aspects like fitness, concentration,
-                  and reflexes to mental areas like critical thinking, handling
-                  pressure, research, and data analysis. If I ever get stuck and
-                  can't find a way to improve, I turn to other resources like
-                  books and podcasts. Though my self-taught journey covers
-                  different topics, they all connect and grow like a spider web.
-                  Click the links below to explore more details.
-                </p>
-              </div>
-            </section>
-          </Popup>
-
-          {/* Personal Growth section */}
-          <Popup
-            content={{
-              imgSrc: "images/pic10.jpg",
-              title: "Personal Growth",
-              description: "Learning Resources for Personal Growth",
-              dataPosition: "25% 25%",
-            }}
-          >
-            <section>
-              <div className="inner">
-                <header className="major">
-                  <h2>Beyond Coding</h2>
-                </header>
-                <p>
-                  I developed a strong interest in table tennis and gaming
-                  during my school days, and I found that when I'm passionate
-                  about something and want a deeper understanding, I need to
-                  actively seek information online. To excel in a competitive
-                  environment, I also need to know how to train effectively and
-                  stick to a plan while putting in hard work. Pursuing better
-                  performance in these hobbies has benefited my personal life in
-                  many ways, from physical aspects like fitness, concentration,
-                  and reflexes to mental areas like critical thinking, handling
-                  pressure, research, and data analysis. If I ever get stuck and
-                  can't find a way to improve, I turn to other resources like
-                  books and podcasts. Though my self-taught journey covers
-                  different topics, they all connect and grow like a spider web.
-                  Click the links below to explore more details.
-                </p>
-              </div>
-            </section>
-          </Popup>
+                </Popup>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
-
-      {/* <!-- Contact --> */}
-
       {/* <!-- Footer --> */}
       <Footer />
     </>

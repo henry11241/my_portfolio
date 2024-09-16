@@ -45,7 +45,7 @@ export default function Home() {
         <section id="one" className="tiles">
           <article>
             <span className="image">
-              <img src="images/pic01.jpg" alt="" />
+              <img src="images/bg_pic01.jpg" alt="" />
             </span>
             <header className="major">
               <h3>
@@ -58,7 +58,7 @@ export default function Home() {
           </article>
           <article>
             <span className="image">
-              <img src="images/pic02.jpg" alt="" />
+              <img src="images/bg_pic02.jpg" alt="" />
             </span>
             <header className="major">
               <h3>
@@ -71,7 +71,7 @@ export default function Home() {
           </article>
           <article>
             <span className="image">
-              <img src="images/pic03.jpg" alt="" />
+              <img src="images/bg_pic03.jpg" alt="" />
             </span>
             <header className="major">
               <h3>
@@ -88,7 +88,7 @@ export default function Home() {
           </article>
           <article>
             <span className="image">
-              <img src="images/pic04.jpg" alt="" />
+              <img src="images/bg_pic04.jpg" alt="" />
             </span>
             <header className="major">
               <h3>
@@ -101,7 +101,7 @@ export default function Home() {
           </article>
           <article>
             <span className="image">
-              <img src="images/pic05.jpg" alt="" />
+              <img src="images/bg_pic05.jpg" alt="" />
             </span>
             <header className="major">
               <h3>
@@ -114,7 +114,7 @@ export default function Home() {
           </article>
           <article>
             <span className="image">
-              <img src="images/pic06.jpg" alt="" />
+              <img src="images/bg_pic06.jpg" alt="" />
             </span>
             <header className="major">
               <h3>
