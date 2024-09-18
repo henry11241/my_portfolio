@@ -2,6 +2,13 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Metadata } from "next";
+import Image from "next/image";
+import bg_pic01 from "../../public/images/bg_pic01.jpg";
+import bg_pic02 from "../../public/images/bg_pic02.jpg";
+import bg_pic03 from "../../public/images/bg_pic03.jpg";
+import bg_pic04 from "../../public/images/bg_pic04.jpg";
+import bg_pic05 from "../../public/images/bg_pic05.jpg";
+import bg_pic06 from "../../public/images/bg_pic06.jpg";
 
 export const metadata: Metadata = {
   title: "Home Page",
@@ -26,7 +33,7 @@ export default function Home() {
               <br />
               continually learning through new projects and experiences.
               <br />
-              These are the topics I'm going to talk about.
+              These are the topics I&apos;m going to talk about.
             </p>
             <ul className="actions">
               <li>
@@ -45,7 +52,7 @@ export default function Home() {
         <section id="one" className="tiles">
           <article>
             <span className="image">
-              <img src="images/bg_pic01.jpg" alt="" />
+              <Image src={bg_pic01} alt="Picture of the Courses" />
             </span>
             <header className="major">
               <h3>
@@ -58,7 +65,7 @@ export default function Home() {
           </article>
           <article>
             <span className="image">
-              <img src="images/bg_pic02.jpg" alt="" />
+              <Image src={bg_pic02} alt="Picture of the Career Path" />
             </span>
             <header className="major">
               <h3>
@@ -71,7 +78,7 @@ export default function Home() {
           </article>
           <article>
             <span className="image">
-              <img src="images/bg_pic03.jpg" alt="" />
+              <Image src={bg_pic03} alt="Picture of the Sports and Gaming" />
             </span>
             <header className="major">
               <h3>
@@ -88,7 +95,7 @@ export default function Home() {
           </article>
           <article>
             <span className="image">
-              <img src="images/bg_pic04.jpg" alt="" />
+              <Image src={bg_pic04} alt="Picture of the Struggles" />
             </span>
             <header className="major">
               <h3>
@@ -101,7 +108,10 @@ export default function Home() {
           </article>
           <article>
             <span className="image">
-              <img src="images/bg_pic05.jpg" alt="" />
+              <Image
+                src={bg_pic05}
+                alt="Picture of the Knowledge"
+              />
             </span>
             <header className="major">
               <h3>
@@ -114,7 +124,10 @@ export default function Home() {
           </article>
           <article>
             <span className="image">
-              <img src="images/bg_pic06.jpg" alt="" />
+              <Image
+                src={bg_pic06}
+                alt="Picture of the ChatGPT"
+              />
             </span>
             <header className="major">
               <h3>

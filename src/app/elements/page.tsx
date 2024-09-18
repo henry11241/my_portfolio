@@ -1,8 +1,13 @@
-import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import Menu from '@/components/Menu'
-import { Metadata } from 'next';
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Menu from "@/components/Menu";
+import { Metadata } from "next";
+import Image from "next/image";
+import pic03 from "../../../public/images/pic03.jpg";
+import pic08 from "../../../public/images/pic08.jpg";
+import pic09 from "../../../public/images/pic09.jpg";
+import pic10 from "../../../public/images/pic10.jpg";
 
 export const metadata: Metadata = {
   title: "Elements",
@@ -105,10 +110,10 @@ export default function Elements() {
                 <h3>Text</h3>
                 <p>
                   This is <b>bold</b> and this is <strong>strong</strong>. This
-                  is <i>italic</i> and this is <em>emphasized</em>. This is{' '}
-                  <sup>superscript</sup> text and this is <sub>subscript</sub>{' '}
-                  text. This is <u>underlined</u> and this is code:{' '}
-                  <code>for (;;) {'...'}</code>. Finally, this is a{' '}
+                  is <i>italic</i> and this is <em>emphasized</em>. This is{" "}
+                  <sup>superscript</sup> text and this is <sub>subscript</sub>{" "}
+                  text. This is <u>underlined</u> and this is code:{" "}
+                  <code>for (;;) {"..."}</code>. Finally, this is a{" "}
                   <a href="#">link</a>.
                 </p>
                 <hr />
@@ -681,55 +686,55 @@ export default function Elements() {
 
                 <h4>Fit</h4>
                 <span className="image fit">
-                  <img src="images/pic03.jpg" alt="" />
+                  <Image src={pic03} alt="" />
                 </span>
                 <div className="box alt">
                   <div className="row gtr-50 gtr-uniform">
                     <div className="col-4">
                       <span className="image fit">
-                        <img src="images/pic08.jpg" alt="" />
+                        <Image src={pic08} alt="" />
                       </span>
                     </div>
                     <div className="col-4">
                       <span className="image fit">
-                        <img src="images/pic09.jpg" alt="" />
+                        <Image src={pic09} alt="" />
                       </span>
                     </div>
                     <div className="col-4">
                       <span className="image fit">
-                        <img src="images/pic10.jpg" alt="" />
-                      </span>
-                    </div>
-                    {/* <!-- Break --> */}
-                    <div className="col-4">
-                      <span className="image fit">
-                        <img src="images/pic10.jpg" alt="" />
-                      </span>
-                    </div>
-                    <div className="col-4">
-                      <span className="image fit">
-                        <img src="images/pic08.jpg" alt="" />
-                      </span>
-                    </div>
-                    <div className="col-4">
-                      <span className="image fit">
-                        <img src="images/pic09.jpg" alt="" />
+                        <Image src={pic10} alt="" />
                       </span>
                     </div>
                     {/* <!-- Break --> */}
                     <div className="col-4">
                       <span className="image fit">
-                        <img src="images/pic09.jpg" alt="" />
+                        <Image src={pic10} alt="" />
                       </span>
                     </div>
                     <div className="col-4">
                       <span className="image fit">
-                        <img src="images/pic10.jpg" alt="" />
+                        <Image src={pic08} alt="" />
                       </span>
                     </div>
                     <div className="col-4">
                       <span className="image fit">
-                        <img src="images/pic08.jpg" alt="" />
+                        <Image src={pic09} alt="" />
+                      </span>
+                    </div>
+                    {/* <!-- Break --> */}
+                    <div className="col-4">
+                      <span className="image fit">
+                        <Image src={pic09} alt="" />
+                      </span>
+                    </div>
+                    <div className="col-4">
+                      <span className="image fit">
+                        <Image src={pic10} alt="" />
+                      </span>
+                    </div>
+                    <div className="col-4">
+                      <span className="image fit">
+                        <Image src={pic08} alt="" />
                       </span>
                     </div>
                   </div>
@@ -738,7 +743,7 @@ export default function Elements() {
                 <h4>Left &amp; Right</h4>
                 <p>
                   <span className="image left">
-                    <img src="images/pic09.jpg" alt="" />
+                    <Image src={pic09} alt="" />
                   </span>
                   Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt
                   felis sagittis eget. tempus euismod. Vestibulum ante ipsum
@@ -754,7 +759,7 @@ export default function Elements() {
                 </p>
                 <p>
                   <span className="image right">
-                    <img src="images/pic10.jpg" alt="" />
+                    <Image src={pic10} alt="" />
                   </span>
                   Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt
                   felis sagittis eget. tempus euismod. Vestibulum ante ipsum
@@ -813,5 +818,5 @@ print 'It took ' + i + ' iterations to sort the deck.';
       {/* <!-- Footer --> */}
       <Footer />
     </>
-  )
+  );
 }

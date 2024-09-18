@@ -1,7 +1,6 @@
 "use client";
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
-
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -12,10 +11,18 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 
+import Image from "next/image";
+import image_0 from "../../public/images/games/image_0.png";
+import image_1 from "../../public/images/games/image_1.png";
+import image_2 from "../../public/images/games/image_2.png";
+import image_3 from "../../public/images/games/image_3.png";
+import image_4 from "../../public/images/games/image_4.png";
+
 export default function GamingCarousel() {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
+  const images = [image_0, image_1, image_2, image_3, image_4];
 
   React.useEffect(() => {
     if (!api) {
@@ -42,7 +49,15 @@ export default function GamingCarousel() {
             <CarouselItem key={index} className="flex justify-center">
               <Card>
                 <CardContent className="flex items-center justify-center p-6">
-                  <img src={`/images/games/image_${index}.png`} />
+                  <Image
+                    src={images[index]}
+                    alt={`${index + 1} image of Gaming Carousel`}
+                    data-position="center center"
+                    style={{
+                      width: "670px",
+                      height: "auto",
+                    }}
+                  />
                 </CardContent>
               </Card>
             </CarouselItem>

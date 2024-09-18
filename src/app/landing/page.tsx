@@ -3,6 +3,10 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Popup from "@/components/Popup";
 import GamingCarousel from "@/components/GamingCarousel";
+import Image from "next/image";
+import banner_bg_pic02 from "../../../public/images/banner_bg_pic02.jpg";
+import pic08 from "../../../public/images/pic08.jpg";
+import books from "../../../public/images/books.png";
 
 export const metadata: Metadata = {
   title: "About Me",
@@ -19,7 +23,10 @@ export default function Landing() {
       <section id="banner" className="style2">
         <div className="inner">
           <span className="image">
-            <img src="/images/banner_bg_pic02.jpg" alt="" />
+            <Image
+              src={banner_bg_pic02}
+              alt="Background image of banner for About Me"
+            />
           </span>
           <header className="major">
             <h1>About Me</h1>
@@ -43,13 +50,13 @@ export default function Landing() {
             </header>
             <p>
               I graduated from National Taiwan Ocean University with a
-              bachelor's degree in marine engineering. I was previously
+              bachelor&apos;s degree in marine engineering. I was previously
               recruited by Evergreen Aviation Technologies Corp. as an aircraft
               maintenance engineer. However, due to the high risk of injury and
               limited career flexibility, I decided to explore a different
               field. I developed an interest in computer science, which I
-              couldn't pursue in college due to my exam results. Now, I'm on a
-              self-taught journey to become a software engineer.
+              couldn&apos;t pursue in college due to my exam results. Now,
+              I&apos;m on a self-taught journey to become a software engineer.
             </p>
           </div>
         </section>
@@ -61,17 +68,18 @@ export default function Landing() {
               <h2>Skills and Progress</h2>
             </header>
             <p>
-              I've been self-taught for about three years, mainly focusing on
-              fully understanding the courses I took. Starting with the basics
-              of <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>, I learned how
-              to use tools like <b>VS Code</b>, the <b>terminal</b>, and{" "}
-              <b>GitHub</b>. I then advanced to topics like <b>TypeScript</b>{" "}
-              for type checking, <b>React</b> for front-end frameworks, the{" "}
-              <b>MERN stack</b> for full-stack development, and <b>Next.js</b>{" "}
-              as a modern approach to building apps. I believe that only after
-              having a solid knowledge foundation can I contribute effectively
-              in a real-world job under time pressure, while also quickly
-              picking up new technologies when needed in the future.
+              I&apos;ve been self-taught for about three years, mainly focusing
+              on fully understanding the courses I took. Starting with the
+              basics of <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>, I
+              learned how to use tools like <b>VS Code</b>, the <b>terminal</b>,
+              and <b>GitHub</b>. I then advanced to topics like{" "}
+              <b>TypeScript</b> for type checking, <b>React</b> for front-end
+              frameworks, the <b>MERN stack</b> for full-stack development, and{" "}
+              <b>Next.js</b> as a modern approach to building apps. I believe
+              that only after having a solid knowledge foundation can I
+              contribute effectively in a real-world job under time pressure,
+              while also quickly picking up new technologies when needed in the
+              future.
             </p>
             <ul className="actions">
               <li>
@@ -102,7 +110,7 @@ export default function Landing() {
               hit a roadblock, I turn to additional resources like <b>books</b>{" "}
               and <b>podcasts</b> for guidance. Although my self-taught journey
               spans various topics, they all interconnect and evolve, much like
-              a spider's web.
+              a spider&apos;s web.
             </p>
             <ul className="actions">
               <li>
@@ -121,8 +129,8 @@ export default function Landing() {
                           <h4>Gaming</h4>
                         </header>
                         <p>
-                          For me, gaming isn't just a hobby—it's a way to{" "}
-                          <b>connect with people</b>, build skills, and keep
+                          For me, gaming isn&apos;t just a hobby—it&apos;s a way
+                          to <b>connect with people</b>, build skills, and keep
                           life balanced. Whether playing as a team member,
                           taking on the role of a <b>leader</b>, or acting as an{" "}
                           <b>executor</b> in high-pressure moments, gaming
@@ -140,8 +148,8 @@ export default function Landing() {
                     <section>
                       {/* Video */}
                       <div className="image">
-                        <img
-                          src="images/pic08.jpg"
+                        <Image
+                          src={pic08}
                           alt=""
                           data-position="center center"
                         />
@@ -156,18 +164,20 @@ export default function Landing() {
                           striving for better performance like a{" "}
                           <b>dedicated craftsman</b>. I focus on every small{" "}
                           <b>detail</b> with <b>precision</b>, starting by
-                          observing how my opponent moves. I predict the ball's
-                          curve based on its spin and speed, and then decide how
-                          to respond while keeping my overall <b>strategy</b> in
-                          mind. Whether playing smart with positioning or making
-                          a bold move with a powerful strike, all within a
-                          reaction window of 0.2 to 0.3 seconds, I thrive on the
-                          challenge. This activity has sharpened my <b>focus</b>
-                          , reflexes, <b>self-awareness</b>, and ability to{" "}
-                          <b>handle pressure</b>. It's improved my body control,
-                          physical fitness, and even sparked my{" "}
-                          <b>creativity</b>. The mindset I've developed here
-                          naturally carries over into other areas of my life.
+                          observing how my opponent moves. I predict the
+                          ball&apos;s curve based on its spin and speed, and
+                          then decide how to respond while keeping my overall{" "}
+                          <b>strategy</b> in mind. Whether playing smart with
+                          positioning or making a bold move with a powerful
+                          strike, all within a reaction window of 0.2 to 0.3
+                          seconds, I thrive on the challenge. This activity has
+                          sharpened my <b>focus</b>, reflexes,{" "}
+                          <b>self-awareness</b>, and ability to{" "}
+                          <b>handle pressure</b>. It&apos;s improved my body
+                          control, physical fitness, and even sparked my{" "}
+                          <b>creativity</b>. The mindset I&apos;ve developed
+                          here naturally carries over into other areas of my
+                          life.
                         </p>
                       </div>
                     </section>
@@ -176,9 +186,9 @@ export default function Landing() {
                     <section>
                       {/* Images */}
                       <div className="image">
-                        <img
-                          src="images/books.png"
-                          alt=""
+                        <Image
+                          src={books}
+                          alt="Image for Personal Growth"
                           data-position="center center"
                         />
                       </div>
@@ -188,15 +198,15 @@ export default function Landing() {
                           <h4>Personal Growth</h4>
                         </header>
                         <p>
-                          I've always had a <b>curiosity</b> and a drive to{" "}
+                          I&apos;ve always had a <b>curiosity</b> and a drive to{" "}
                           <b>learn more</b> whenever I discover a better way to
-                          approach something. Over time, I've explored a wide
-                          range of topics, from <b>economics</b> and{" "}
+                          approach something. Over time, I&apos;ve explored a
+                          wide range of topics, from <b>economics</b> and{" "}
                           <b>psychology</b> to <b>nutrition</b> and{" "}
                           <b>body training</b>. I spend countless hours
                           researching through books and videos on subjects that
-                          interest me, then actively apply what I've learned to
-                          my daily life.
+                          interest me, then actively apply what I&apos;ve
+                          learned to my daily life.
                         </p>
                       </div>
                     </section>
