@@ -63,14 +63,15 @@ export default function Landing() {
             <p>
               I've been self-taught for about three years, mainly focusing on
               fully understanding the courses I took. Starting with the basics
-              of HTML, CSS, and JavaScript, I learned how to use tools like VS
-              Code, the terminal, and GitHub. I then advanced to topics like
-              TypeScript for type checking, React for front-end frameworks, the
-              MERN stack for full-stack development, and Next.js as a modern
-              approach to building apps. I believe that only after having a
-              solid knowledge foundation can I contribute effectively in a
-              real-world job under time pressure, while also quickly picking up
-              new technologies when needed in the future.
+              of <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>, I learned how
+              to use tools like <b>VS Code</b>, the <b>terminal</b>, and{" "}
+              <b>GitHub</b>. I then advanced to topics like <b>TypeScript</b>{" "}
+              for type checking, <b>React</b> for front-end frameworks, the{" "}
+              <b>MERN stack</b> for full-stack development, and <b>Next.js</b>{" "}
+              as a modern approach to building apps. I believe that only after
+              having a solid knowledge foundation can I contribute effectively
+              in a real-world job under time pressure, while also quickly
+              picking up new technologies when needed in the future.
             </p>
             <ul className="actions">
               <li>
@@ -89,18 +90,19 @@ export default function Landing() {
               <h2>Beyond Coding</h2>
             </header>
             <p>
-              During my school days, I developed a strong interest in table
-              tennis and gaming. This passion motivated me to seek information
-              online, which in turn improved my English reading and
-              comprehension skills. I learned how to train effectively, stick to
-              a plan, and work hard to achieve better performance in these
-              hobbies. This pursuit has positively impacted my life in many
-              ways, enhancing my physical fitness, concentration, and reflexes,
-              as well as my mental skills in critical thinking, problem solving
-              and handling pressure. When I hit a roadblock, I turn to
-              additional resources like books and podcasts for guidance.
-              Although my self-taught journey spans various topics, they all
-              interconnect and evolve, much like a spider's web.
+              During my school days, I developed a strong interest in{" "}
+              <b>table tennis</b> and <b>gaming</b>. This passion motivated me
+              to seek information online, which in turn improved my English
+              reading and comprehension skills. I learned how to train
+              effectively, stick to a plan, and work hard to achieve better
+              performance in these hobbies. This pursuit has positively impacted
+              my life in many ways, enhancing my physical fitness,
+              concentration, and reflexes, as well as my mental skills in
+              critical thinking, problem solving and handling pressure. When I
+              hit a roadblock, I turn to additional resources like <b>books</b>{" "}
+              and <b>podcasts</b> for guidance. Although my self-taught journey
+              spans various topics, they all interconnect and evolve, much like
+              a spider's web.
             </p>
             <ul className="actions">
               <li>
@@ -119,30 +121,31 @@ export default function Landing() {
                           <h4>Gaming</h4>
                         </header>
                         <p>
-                          For me, gaming isn't just a hobby—it's a way to
-                          connect with people, build skills, and keep life
-                          balanced. Whether playing as a team member, taking on
-                          the role of a leader, or acting as an executor in
-                          high-pressure moments, gaming offers a dynamic
-                          environment where I can sharpen my decision-making and
-                          adaptability. Beyond the game itself, it also serves
-                          as a social outlet, allowing me to relax and enjoy
-                          meaningful interactions, which help balance the
-                          demands of everyday life.
+                          For me, gaming isn't just a hobby—it's a way to{" "}
+                          <b>connect with people</b>, build skills, and keep
+                          life balanced. Whether playing as a team member,
+                          taking on the role of a <b>leader</b>, or acting as an{" "}
+                          <b>executor</b> in high-pressure moments, gaming
+                          offers a dynamic environment where I can sharpen my{" "}
+                          <b>decision-making</b> and <b>adaptability</b>. Beyond
+                          the game itself, it also serves as a social outlet,
+                          allowing me to relax and enjoy meaningful
+                          interactions, which help balance the demands of
+                          everyday life.
                         </p>
                       </div>
                     </section>
 
                     {/* Table Tennis section */}
                     <section>
-                      {/* Images */}
-                      <a href="generic.html" className="image">
+                      {/* Video */}
+                      <div className="image">
                         <img
                           src="images/pic08.jpg"
                           alt=""
                           data-position="center center"
                         />
-                      </a>
+                      </div>
                       {/* Content */}
                       <div className="content">
                         <header className="self-center">
@@ -150,19 +153,20 @@ export default function Landing() {
                         </header>
                         <p>
                           I push myself to the limit in this realm, constantly
-                          striving for better performance like a dedicated
-                          craftsman. I focus on every small detail with
-                          precision, starting by observing how my opponent
-                          moves. I predict the ball's curve based on its spin
-                          and speed, and then decide how to respond while
-                          keeping my overall strategy in mind. Whether playing
-                          smart with positioning or making a bold move with a
-                          powerful strike, all within a reaction window of 0.2
-                          to 0.3 seconds, I thrive on the challenge. This
-                          activity has sharpened my focus, reflexes,
-                          self-awareness, and ability to handle pressure. It's
-                          improved my body control, physical fitness, and even
-                          sparked my creativity. The mindset I've developed here
+                          striving for better performance like a{" "}
+                          <b>dedicated craftsman</b>. I focus on every small{" "}
+                          <b>detail</b> with <b>precision</b>, starting by
+                          observing how my opponent moves. I predict the ball's
+                          curve based on its spin and speed, and then decide how
+                          to respond while keeping my overall <b>strategy</b> in
+                          mind. Whether playing smart with positioning or making
+                          a bold move with a powerful strike, all within a
+                          reaction window of 0.2 to 0.3 seconds, I thrive on the
+                          challenge. This activity has sharpened my <b>focus</b>
+                          , reflexes, <b>self-awareness</b>, and ability to{" "}
+                          <b>handle pressure</b>. It's improved my body control,
+                          physical fitness, and even sparked my{" "}
+                          <b>creativity</b>. The mindset I've developed here
                           naturally carries over into other areas of my life.
                         </p>
                       </div>
@@ -171,21 +175,28 @@ export default function Landing() {
                     {/* Personal Growth section */}
                     <section>
                       {/* Images */}
-                      <a href="generic.html" className="image">
+                      <div className="image">
                         <img
-                          src="images/pic08.jpg"
+                          src="images/books.png"
                           alt=""
                           data-position="center center"
                         />
-                      </a>
+                      </div>
                       {/* Content */}
                       <div className="content">
                         <header>
                           <h4>Personal Growth</h4>
                         </header>
                         <p>
-                          Things that I I've always got the curiosity and crave
-                          to learn more.
+                          I've always had a <b>curiosity</b> and a drive to{" "}
+                          <b>learn more</b> whenever I discover a better way to
+                          approach something. Over time, I've explored a wide
+                          range of topics, from <b>economics</b> and{" "}
+                          <b>psychology</b> to <b>nutrition</b> and{" "}
+                          <b>body training</b>. I spend countless hours
+                          researching through books and videos on subjects that
+                          interest me, then actively apply what I've learned to
+                          my daily life.
                         </p>
                       </div>
                     </section>

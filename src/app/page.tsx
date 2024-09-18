@@ -138,16 +138,25 @@ export default function Home() {
               <a
                 href="https://dev.to/itzsaga/portfolio-site-how-to-for-new-developers-537p"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 dev.to
               </a>
               . <br />
               Taking the template that design and created by{" "}
-              <a href="https://html5up.net/" target="_blank">
+              <a
+                href="https://html5up.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 HTML5 UP
               </a>{" "}
               and restructure it using{" "}
-              <a href="https://nextjs.org/" target="_blank">
+              <a
+                href="https://nextjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Next.js
               </a>
             </p>

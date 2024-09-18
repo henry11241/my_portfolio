@@ -280,21 +280,26 @@
 				event.stopPropagation();
 			})
 			.on('click', 'a', function(event) {
+        var href = $(this).attr("href");
 
-				var href = $(this).attr('href');
+        event.preventDefault();
+        event.stopPropagation();
+				
+        // Check if the clicked element is a link with target="_blank"
+        if ($(this).attr("target") == "_blank") {
+          // Open in new tab.
+          window.open(href);
+					return
+        }
 
-				event.preventDefault();
-				event.stopPropagation();
+        // Hide.
+        $menu._hide();
 
-				// Hide.
-					$menu._hide();
-
-				// Redirect.
-					window.setTimeout(function() {
-						window.location.href = href;
-					}, 250);
-
-			});
+        // Redirect.
+        window.setTimeout(function () {
+          window.location.href = href;
+        }, 250);
+      });
 
 		$menu
 			.appendTo($body)
