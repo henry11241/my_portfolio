@@ -108,10 +108,7 @@ export default function Home() {
           </article>
           <article>
             <span className="image">
-              <Image
-                src={bg_pic05}
-                alt="Picture of the Knowledge"
-              />
+              <Image src={bg_pic05} alt="Picture of the Knowledge" />
             </span>
             <header className="major">
               <h3>
@@ -124,10 +121,7 @@ export default function Home() {
           </article>
           <article>
             <span className="image">
-              <Image
-                src={bg_pic06}
-                alt="Picture of the ChatGPT"
-              />
+              <Image src={bg_pic06} alt="Picture of the ChatGPT" />
             </span>
             <header className="major">
               <h3>
@@ -147,7 +141,7 @@ export default function Home() {
               <h2>About this site</h2>
             </header>
             <p>
-              This is the website I built after reading the article from{" "}
+              This is the website I built after reading an article on{" "}
               <a
                 href="https://dev.to/itzsaga/portfolio-site-how-to-for-new-developers-537p"
                 target="_blank"
@@ -155,8 +149,7 @@ export default function Home() {
               >
                 dev.to
               </a>
-              . <br />
-              Taking the template that design and created by{" "}
+              . <br />I used a template designed and created by{" "}
               <a
                 href="https://html5up.net/"
                 target="_blank"
@@ -164,14 +157,25 @@ export default function Home() {
               >
                 HTML5 UP
               </a>{" "}
-              and restructure it using{" "}
+              <br />
+              then restructured it using{" "}
               <a
                 href="https://nextjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Next.js
+              </a>{" "}
+              with
+              <a
+                href="https://ui.shadcn.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                shadcn/ui
               </a>
+              .
             </p>
             <ul className="actions">
               <li>
