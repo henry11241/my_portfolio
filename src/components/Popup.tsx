@@ -17,7 +17,7 @@ interface Props {
 export default function Popup({ children, title }: Props) {
   return (
     <Dialog>
-      <DialogTrigger className="button">Learn More</DialogTrigger>
+      <DialogTrigger className="button">Popup To Learn More</DialogTrigger>
       <DialogContent>
         <VisuallyHidden.Root>
           <DialogHeader>

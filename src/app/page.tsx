@@ -56,7 +56,7 @@ export default function Home() {
             </span>
             <header className="major">
               <h3>
-                <a href="/landing" className="link">
+                <a href="/about" className="link">
                   Courses
                 </a>
               </h3>
@@ -69,7 +69,7 @@ export default function Home() {
             </span>
             <header className="major">
               <h3>
-                <a href="/landing" className="link">
+                <a href="/about" className="link">
                   Career Path
                 </a>
               </h3>
@@ -82,7 +82,7 @@ export default function Home() {
             </span>
             <header className="major">
               <h3>
-                <a href="/landing" className="link">
+                <a href="/about" className="link">
                   Sports and Gaming
                 </a>
               </h3>
@@ -99,7 +99,7 @@ export default function Home() {
             </span>
             <header className="major">
               <h3>
-                <a href="/landing" className="link">
+                <a href="/about" className="link">
                   Struggles
                 </a>
               </h3>
@@ -112,7 +112,7 @@ export default function Home() {
             </span>
             <header className="major">
               <h3>
-                <a href="/landing" className="link">
+                <a href="/about" className="link">
                   Knowledge
                 </a>
               </h3>
@@ -125,7 +125,7 @@ export default function Home() {
             </span>
             <header className="major">
               <h3>
-                <a href="/landing" className="link">
+                <a href="/about" className="link">
                   ChatGPT
                 </a>
               </h3>
@@ -179,7 +179,7 @@ export default function Home() {
             </p>
             <ul className="actions">
               <li>
-                <a href="/landing" className="button next">
+                <a href="/about" className="button next">
                   Dive Deeper
                 </a>
               </li>

@@ -5,14 +5,14 @@ import Popup from "@/components/Popup";
 import GamingCarousel from "@/components/GamingCarousel";
 import Image from "next/image";
 import banner_bg_pic02 from "../../../public/images/banner_bg_pic02.jpg";
-import pic08 from "../../../public/images/pic08.jpg";
 import books from "../../../public/images/books.png";
+import YoutubePlayer from "@/components/YoutubePlayer";
 
 export const metadata: Metadata = {
   title: "About Me",
 };
 
-export default function Landing() {
+export default function About() {
   return (
     <>
       {/* <!-- Header --> */}
@@ -83,7 +83,7 @@ export default function Landing() {
             </p>
             <ul className="actions">
               <li>
-                <a href="/generic" className="button next">
+                <a href="/learning-path" className="button next">
                   More Details in next page
                 </a>
               </li>
@@ -145,15 +145,9 @@ export default function Landing() {
                     </section>
 
                     {/* Table Tennis section */}
-                    <section>
+                    <section className="flex items-center">
                       {/* Video */}
-                      <div className="image">
-                        <Image
-                          src={pic08}
-                          alt=""
-                          data-position="center center"
-                        />
-                      </div>
+                      <YoutubePlayer />
                       {/* Content */}
                       <div className="content">
                         <header className="self-center">

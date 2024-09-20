@@ -1,0 +1,22 @@
+.responsiveVideo {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.responsiveVideo iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media screen and (min-width: 1680px) {
+  .responsiveVideo {
+    width: 670px;
+    height: 500px;
+    padding: 0;
+  }
+}
