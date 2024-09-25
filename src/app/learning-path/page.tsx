@@ -82,7 +82,7 @@ export default function LearningPath() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <b>"Web Development in 2023 - A Practical Guide."</b>
+                <b>&quot;Web Development in 2023 - A Practical Guide.&quot;</b>
               </a>{" "}
               After watching the video, I gained a better understanding of the
               modern web development environment. As a result, I decided to take
@@ -98,9 +98,9 @@ export default function LearningPath() {
           <div className="inner">
             <h2>Read & Write</h2>
             <p>
-              At this stage, I realized that I wouldn't improve if I just kept
-              following courses. However, I still felt a bit lost when coding
-              without instructions. Then I came across a website called
+              At this stage, I realized that I wouldn&apos;t improve if I just
+              kept following courses. However, I still felt a bit lost when
+              coding without instructions. Then I came across a website called
               <FreeCodeCampLogo />
               that helped me <b>break through</b> this barrier. It provides
               practice exercises based on written instructions, guiding me to
@@ -109,8 +109,8 @@ export default function LearningPath() {
               <b>writing</b>.
             </p>
             <p>
-              I tried using React with some frontend exercises, and that's when
-              I discovered that create-react-app had become deprecated. The
+              I tried using React with some frontend exercises, and that&apos;s
+              when I discovered that create-react-app had become deprecated. The
               React official documentation recommended using <b>Next.js</b> with{" "}
               <b>Tailwind CSS</b> instead. This time, I decided to{" "}
               <b>read the documentation</b> for both Next.js and Tailwind CSS on
