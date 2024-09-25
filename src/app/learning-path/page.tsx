@@ -1,8 +1,11 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Menu from "@/components/Menu";
+import TraversyCourses from "@/components/TraversyCourses";
 import UdemyCourses from "@/components/UdemyCourses";
+import FreeCodeCampLogo from "@/components/FreeCodeCampLogo";
 import { Metadata } from "next";
+import MyApps from "@/components/MyApps";
 
 export const metadata: Metadata = {
   title: "Code Learning Path",
@@ -49,7 +52,6 @@ export default function LearningPath() {
         </section>
 
         {/* <!-- Two --> */}
-
         <section id="two">
           <div className="inner">
             <h2>Lay a Wide Foundation</h2>
@@ -63,6 +65,60 @@ export default function LearningPath() {
               information in the <b>long term</b>.
             </p>
           </div>
+        </section>
+
+        {/* <!-- Three --> */}
+        <section id="three">
+          <div className="inner">
+            <h2>Exploring More</h2>
+            <p>
+              When I took the React course mentioned earlier, I noticed that
+              React was transitioning from class components to function
+              components at that time, but the course didn&apos;t cover this
+              shift yet. I looked for other resources and found a YouTube video
+              titled{" "}
+              <a
+                href="https://www.youtube.com/watch?v=u72H_zZzkcw"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <b>"Web Development in 2023 - A Practical Guide."</b>
+              </a>{" "}
+              After watching the video, I gained a better understanding of the
+              modern web development environment. As a result, I decided to take
+              both a React course and a MERN stack course to explore these more
+              modern approaches for building full-stack apps.
+            </p>
+            <TraversyCourses />
+          </div>
+        </section>
+
+        {/* <!-- Four --> */}
+        <section id="four">
+          <div className="inner">
+            <h2>Read & Write</h2>
+            <p>
+              At this stage, I realized that I wouldn't improve if I just kept
+              following courses. However, I still felt a bit lost when coding
+              without instructions. Then I came across a website called
+              <FreeCodeCampLogo />
+              that helped me <b>break through</b> this barrier. It provides
+              practice exercises based on written instructions, guiding me to
+              write code from scratch. Through this process, my learning path
+              shifted from listening and following to <b>reading</b> and{" "}
+              <b>writing</b>.
+            </p>
+            <p>
+              I tried using React with some frontend exercises, and that's when
+              I discovered that create-react-app had become deprecated. The
+              React official documentation recommended using <b>Next.js</b> with{" "}
+              <b>Tailwind CSS</b> instead. This time, I decided to{" "}
+              <b>read the documentation</b> for both Next.js and Tailwind CSS on
+              my own, without following any courses, and built a few simple apps
+              with them.
+            </p>
+          </div>
+          <MyApps />
         </section>
       </div>
 
