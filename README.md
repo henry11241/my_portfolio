@@ -11,7 +11,7 @@ This is a website created using an HTML5 UP template, combined with Next.js, Tai
 
 ## Known Issues
 
-- The original HTML5 UP template uses jQuery, which may conflict with React's rendering and event handling. 
+- The original HTML5 UP template uses jQuery, which may conflict with React's rendering and event handling. If some animations are not working as expected, please reload the page.
 
 ## Technologies Used
 
@@ -20,6 +20,9 @@ This is a website created using an HTML5 UP template, combined with Next.js, Tai
 - **Tailwind CSS** - For custom styling and responsiveness.
 - **shadcn/ui** - For UI components and design consistency.
 
+## Live Demo
+
+- Live hosted on Vercel: [View Site](https://my-portfolio-sepia-two-14.vercel.app/about)
 
 ## Getting Started
 
