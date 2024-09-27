@@ -1,5 +1,7 @@
+"use client";
+
 import { Dialog } from "@radix-ui/react-dialog";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import {
   DialogClose,
   DialogContent,
@@ -15,9 +17,23 @@ interface Props {
   title: string;
 }
 export default function Popup({ children, title }: Props) {
+  const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    const header = document.querySelector("#header") as HTMLElement | null;
+    if (header) {
+      if (isOpen) {
+        header.style.display = "none"; // Hide the header when the popup is open
+      } else {
+        header.style.display = ""; // Reset the display property when popup is closed
+      } 
+    }
+  }, [isOpen]);
+
   return (
     <Dialog>
-      <DialogTrigger className="button">Popup To Learn More</DialogTrigger>
+      <DialogTrigger className="button" onClick={() => setIsOpen(true)}>
+        Popup To Learn More
+      </DialogTrigger>
       <DialogContent>
         <VisuallyHidden.Root>
           <DialogHeader>
@@ -27,7 +43,11 @@ export default function Popup({ children, title }: Props) {
         </VisuallyHidden.Root>
         {children}
         <DialogClose asChild>
-          <button type="button" className="button small">
+          <button
+            type="button"
+            className="button small"
+            onClick={() => setIsOpen(false)}
+          >
             Close
           </button>
         </DialogClose>
