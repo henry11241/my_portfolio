@@ -22,7 +22,7 @@ This is a website created using an HTML5 UP template, combined with Next.js, Tai
 
 ## Live Demo
 
-- Live hosted on Vercel: [View Site](https://my-portfolio-sepia-two-14.vercel.app/about)
+- Live hosted on Vercel: [View Site](https://my-portfolio-sepia-two-14.vercel.app)
 
 ## Getting Started
 
