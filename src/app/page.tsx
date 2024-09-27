@@ -179,8 +179,13 @@ export default function Home() {
             </p>
             <ul className="actions">
               <li>
-                <a href="/about" className="button next">
-                  Dive Deeper
+                <a
+                  href="https://github.com/henry11241/my_portfolio"
+                  className="button next"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Details in Github Repo
                 </a>
               </li>
             </ul>

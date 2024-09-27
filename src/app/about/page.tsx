@@ -51,12 +51,13 @@ export default function About() {
             <p>
               I graduated from National Taiwan Ocean University with a
               bachelor&apos;s degree in marine engineering. I was previously
-              recruited by Evergreen Aviation Technologies Corp. as an aircraft
-              maintenance engineer. However, due to the high risk of injury and
-              limited career flexibility, I decided to explore a different
-              field. I developed an interest in computer science, which I
-              couldn&apos;t pursue in college due to my exam results. Now,
-              I&apos;m on a self-taught journey to become a software engineer.
+              recruited by Evergreen Aviation Technologies Corp. as an{" "}
+              <b>aircraft maintenance engineer</b>. However, due to the high
+              risk of injury and limited career flexibility, I decided to
+              explore a different field. I developed an interest in computer
+              science, which I couldn&apos;t pursue in college due to my exam
+              results. Now, I&apos;m on a self-taught journey to become a
+              software engineer.
             </p>
           </div>
         </section>
