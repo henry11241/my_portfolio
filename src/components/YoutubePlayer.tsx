@@ -7,8 +7,8 @@ import styles from "./YoutubePlayer.module.css";
 export default function YoutubePlayer() {
   const onPlayerReady: YouTubeProps["onReady"] = (event) => {
     // access to player in all event handlers via event.target
-    event.target.pauseVideo();
-    event.target.setVolume = 20;
+    // event.target.pauseVideo();
+    // event.target.setVolume = 20;
   };
 
   const opts: YouTubeProps["opts"] = {
@@ -16,7 +16,7 @@ export default function YoutubePlayer() {
     width: "670",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
-      autoplay: 1,
+      autoplay: 0,
     },
   };
 
