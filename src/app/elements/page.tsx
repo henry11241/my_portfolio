@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Elements",
 };
 
-export default function Elements() {
+export default function Page() {
   return (
     <>
       {/* <!-- Header --> */}

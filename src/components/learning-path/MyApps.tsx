@@ -1,8 +1,11 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
-import MyAppsCard from "@/components/CourseCard";
-import random_quote_machine from "../../public/images/myApps/random-quote-machine.png";
-import markdown_previewer from "../../public/images/myApps/markdown-previewer.png";
-import drum_machine from "../../public/images/myApps/drum-machine.png";
+import { motion } from "framer-motion";
+import MyAppsCard from "@/components/ui/CourseCard";
+import random_quote_machine from "@/../../public/images/myApps/random-quote-machine.png";
+import markdown_previewer from "@/../../public/images/myApps/markdown-previewer.png";
+import drum_machine from "@/../../public/images/myApps/drum-machine.png";
 
 interface MyApps {
   img: StaticImageData; // Type for Next.js images
@@ -39,7 +42,14 @@ export default function MyApps() {
         {myApps.map(({ img, href, github, appName }, index) => (
           <div className="max-w-[460px] flex-col text-center" key={index}>
             <MyAppsCard href={href}>
-              <Image src={img} alt={`Picture of ${appName} Course`} />
+              <motion.div
+                className="overflow-hidden rounded-2xl shadow-lg"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <Image src={img} alt={`Picture of ${appName} Course`} />
+              </motion.div>
             </MyAppsCard>
             <a
               className="button small"

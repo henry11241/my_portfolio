@@ -17,12 +17,13 @@ export default function YoutubePlayer() {
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 0,
+      mute: 1,
     },
   };
 
   return (
     <div className={styles.responsiveVideo}>
-      <YouTube videoId="bYm6GVEsa7g" opts={opts} onReady={onPlayerReady} />
+      <YouTube videoId="_1DVqRYSGM4" opts={opts} onReady={onPlayerReady} />
     </div>
   );
 }

@@ -1,11 +1,14 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
-import CourseCard from "@/components/CourseCard";
-import course01 from "../../public/images/course01.png";
-import course02 from "../../public/images/course02.png";
-import course03 from "../../public/images/course03.png";
-import course04 from "../../public/images/course04.png";
-import course05 from "../../public/images/course05.png";
-import course06 from "../../public/images/course06.png";
+import { motion } from "framer-motion";
+import CourseCard from "@/components/ui/CourseCard";
+import course01 from "@/../../public/images/course01.png";
+import course02 from "@/../../public/images/course02.png";
+import course03 from "@/../../public/images/course03.png";
+import course04 from "@/../../public/images/course04.png";
+import course05 from "@/../../public/images/course05.png";
+import course06 from "@/../../public/images/course06.png";
 
 interface Course {
   img: StaticImageData; // Type for Next.js images
@@ -52,7 +55,14 @@ export default function UdemyCourses() {
       <div className="row gtr50 gtr-uniform">
         {courses.map(({ img, href, courseName }, index) => (
           <CourseCard href={href} key={index}>
-            <Image src={img} alt={`Picture of ${courseName} Course`} />
+            <motion.div
+              className="overflow-hidden rounded-2xl shadow-lg"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
+              <Image src={img} alt={`Picture of ${courseName} Course`} />
+            </motion.div>
           </CourseCard>
         ))}
       </div>

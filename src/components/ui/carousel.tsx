@@ -184,7 +184,7 @@ const CarouselItem = React.forwardRef<
       role="group"
       aria-roledescription="slide"
       className={cn(
-        "min-w-0 shrink-0 grow-0 basis-full",
+        "min-w-0 shrink-0 grow-0 basis-full scale-110",
         orientation === "horizontal" ? "pl-4" : "pt-4",
         className,
       )}
@@ -201,7 +201,11 @@ const CarouselPrevious = React.forwardRef<
   const { orientation, scrollPrev, canScrollPrev } = useCarousel();
 
   return (
-    <button className="button small" onClick={scrollPrev} disabled={!canScrollPrev}>
+    <button
+      className="button small"
+      onClick={scrollPrev}
+      disabled={!canScrollPrev}
+    >
       <ArrowLeft className="h-4 w-4" />
       <span className="sr-only">Previous slide</span>
     </button>
@@ -216,7 +220,11 @@ const CarouselNext = React.forwardRef<
   const { scrollNext, canScrollNext } = useCarousel();
 
   return (
-    <button className="button small" onClick={scrollNext} disabled={!canScrollNext}>
+    <button
+      className="button small"
+      onClick={scrollNext}
+      disabled={!canScrollNext}
+    >
       <ArrowRight className="h-4 w-4" />
       <span className="sr-only">Next slide</span>
     </button>

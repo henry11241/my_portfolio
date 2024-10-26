@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: 'My portfolio using the template from "Forty by HTML5 UP"',
 };
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       {/* <!-- Header --> */}

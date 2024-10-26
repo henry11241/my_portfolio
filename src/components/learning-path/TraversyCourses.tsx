@@ -1,11 +1,13 @@
-import Image, { StaticImageData } from "next/image";
-import CourseCard from "@/components/CourseCard";
-import traversymedia_pic01 from "../../public/images/traversymedia_pic01.png";
-import traversymedia_pic02 from "../../public/images/traversymedia_pic02.png";
+"use client";
 
+import Image, { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
+import CourseCard from "@/components/ui/CourseCard";
+import traversymedia_pic01 from "@/../../public/images/traversymedia_pic01.png";
+import traversymedia_pic02 from "@/../../public/images/traversymedia_pic02.png";
 
 interface Course {
-  img: StaticImageData; // Type for Next.js images
+  img: StaticImageData;
   href: string;
   courseName: string;
 }
@@ -29,7 +31,14 @@ export default function TraversyCourses() {
       <div className="row gtr50 gtr-uniform">
         {courses.map(({ img, href, courseName }, index) => (
           <CourseCard href={href} key={index}>
-            <Image src={img} alt={`Picture of ${courseName} Course`} />
+            <motion.div
+              className="overflow-hidden rounded-2xl shadow-lg"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
+              <Image src={img} alt={`Picture of ${courseName} Course`} />
+            </motion.div>
           </CourseCard>
         ))}
       </div>

@@ -1,10 +1,11 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import { Viewport } from "next";
 import { cn } from "@/lib/utils";
 import Menu from "@/components/Menu";
-import PreloadHandler from "@/components/PreloadHandler";
-import { Viewport } from "next";
+import PreloadHandler from "@/feature/PreloadHandler";
+import ScrollToTopBtn from "@/components/ui/ScrollToTopBtn";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         <div id="wrapper">
           <Menu />
           {children}
+          <ScrollToTopBtn />
         </div>
       </body>
 
