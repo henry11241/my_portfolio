@@ -41,9 +41,9 @@ export default function MyApps() {
       <div className="row gtr50 gtr-uniform justify-center">
         {myApps.map(({ img, href, github, appName }, index) => (
           <div className="max-w-[460px] flex-col text-center" key={index}>
-            <MyAppsCard href={href}>
+            <MyAppsCard href={href} key={index}>
               <motion.div
-                className="overflow-hidden rounded-2xl shadow-lg"
+                className="mx-6 overflow-hidden rounded shadow-lg md:rounded-xl lg:mx-2 xl:mx-0"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}

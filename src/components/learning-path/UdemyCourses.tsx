@@ -56,7 +56,7 @@ export default function UdemyCourses() {
         {courses.map(({ img, href, courseName }, index) => (
           <CourseCard href={href} key={index}>
             <motion.div
-              className="overflow-hidden rounded-2xl shadow-lg"
+              className="overflow-hidden rounded shadow-lg md:rounded-xl"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
