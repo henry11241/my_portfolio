@@ -1,5 +1,6 @@
 import AnimateOnView from "@/components/ui/AnimationOnView";
 import TraversyCourses from "./TraversyCourses";
+import FlashingText from "../ui/FlashingText";
 
 export default function Section3() {
   return (
@@ -21,8 +22,19 @@ export default function Section3() {
             </a>{" "}
             After watching the video, I gained a better understanding of the
             modern web development environment. As a result, I decided to take
-            both a React course and a MERN stack course to explore these more
-            modern approaches for building full-stack apps.
+            both a{" "}
+            <b>
+              <FlashingText>React</FlashingText>
+            </b>{" "}
+            course and a{" "}
+            <b>
+              <FlashingText>MERN stack</FlashingText>
+            </b>{" "}
+            course to explore these more modern approaches for building{" "}
+            <b>
+              <FlashingText>full-stack</FlashingText>
+            </b>{" "}
+            apps.
           </p>
         </AnimateOnView>
         <AnimateOnView>
