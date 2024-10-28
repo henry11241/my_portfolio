@@ -1,6 +1,6 @@
 export default function FreeCodeCampLogo() {
   return (
-    <span className="mx-4 inline-block mt-2">
+    <span className="relative top-1 inline-block scale-75 lg:top-1.5">
       <a
         className="universal-nav-logo"
         id="universal-nav-logo"
