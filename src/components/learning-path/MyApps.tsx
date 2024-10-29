@@ -37,10 +37,13 @@ const myApps: MyApps[] = [
 
 export default function MyApps() {
   return (
-    <div className="box alt">
-      <div className="row gtr50 gtr-uniform justify-center">
+    <div className="flex justify-center">
+      <div className="gtr50 gtr-uniform grid md:grid-cols-2 place-items-center">
         {myApps.map(({ img, href, github, appName }, index) => (
-          <div className="max-w-[460px] flex-col text-center" key={index}>
+          <div
+            className="m-4 xl:m-8 max-w-[460px] flex-col text-center xl:max-w-[560px]"
+            key={index}
+          >
             <MyAppsCard href={href} key={index}>
               <motion.div
                 className="mx-6 overflow-hidden rounded shadow-lg md:rounded-xl lg:mx-2 xl:mx-0"
