@@ -1,5 +1,5 @@
-import AnimateOnView from "../ui/AnimationOnView";
-import FlashingText from "../ui/FlashingText";
+import AnimateOnView from "@/components/ui/AnimationOnView";
+import FlashingText from "@/components/ui/FlashingText";
 
 export default function Section2() {
   return (

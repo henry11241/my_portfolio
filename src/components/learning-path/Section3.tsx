@@ -1,6 +1,6 @@
 import AnimateOnView from "@/components/ui/AnimationOnView";
 import TraversyCourses from "./TraversyCourses";
-import FlashingText from "../ui/FlashingText";
+import FlashingText from "@/components/ui/FlashingText";
 
 export default function Section3() {
   return (

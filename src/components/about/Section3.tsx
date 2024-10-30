@@ -3,7 +3,7 @@ import Popup from "./Popup";
 import GamingSection from "./sections-in-popup/GamingSection";
 import TableTennisSection from "./sections-in-popup/TableTennisSection";
 import PersonalGrowthSection from "./sections-in-popup/PersonalGrowthSection";
-import FlashingText from "../ui/FlashingText";
+import FlashingText from "@/components/ui/FlashingText";
 
 export default function Section3() {
   return (

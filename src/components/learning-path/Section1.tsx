@@ -1,5 +1,6 @@
-import AnimateOnView from "../ui/AnimationOnView";
-import FlashingText from "../ui/FlashingText";
+import AnimateOnView from "@/components/ui/AnimationOnView";
+import FlashingText from "@/components/ui/FlashingText";
+import ShimmerText from "@/components/ui/ShimmerText"
 
 export default function Section1() {
   return (
@@ -8,6 +9,7 @@ export default function Section1() {
         <AnimateOnView>
           <header className="major">
             <h1>Code Learning Path</h1>
+            <ShimmerText />
           </header>
           <h2>Rough start</h2>
           <p>

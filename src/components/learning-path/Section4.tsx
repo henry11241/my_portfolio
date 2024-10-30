@@ -1,7 +1,7 @@
 import AnimateOnView from "@/components/ui/AnimationOnView";
 import FreeCodeCampLogo from "@/components/ui/FreeCodeCampLogo";
 import MyApps from "./MyApps";
-import FlashingText from "../ui/FlashingText";
+import FlashingText from "@/components/ui/FlashingText";
 
 export default function Section4() {
   return (

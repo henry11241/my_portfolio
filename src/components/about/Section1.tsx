@@ -1,4 +1,4 @@
-import AnimateOnView from "../ui/AnimationOnView";
+import AnimateOnView from "@/components/ui/AnimationOnView";
 
 export default function Section1() {
   return (
