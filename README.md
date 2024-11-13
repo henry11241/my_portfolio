@@ -19,6 +19,7 @@ This is a website created using an HTML5 UP template, combined with Next.js, Tai
 - **Next.js** - For server-side rendering and routing.
 - **Tailwind CSS** - For custom styling and responsiveness.
 - **shadcn/ui** - For UI components and design consistency.
+- **Motion** - For components animation.
 
 ## Live Demo
 
