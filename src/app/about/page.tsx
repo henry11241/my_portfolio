@@ -44,10 +44,10 @@ export default function Page() {
         {/* Career Shift section */}
         <Section1 />
 
-        {/* Skills and Progress section */}
+        {/* Beyond Coding section */}
         <Section2 />
 
-        {/* Beyond Coding section */}
+        {/* Skills and Progress section */}
         <Section3 />
       </div>
       {/* <!-- Footer --> */}

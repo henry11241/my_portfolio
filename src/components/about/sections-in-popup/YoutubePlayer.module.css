@@ -12,11 +12,3 @@
   width: 100%;
   position: absolute;
 }
-
-@media screen and (min-width: 1680px) {
-  .responsiveVideo {
-    width: 670px;
-    height: 500px;
-    padding: 0;
-  }
-}
