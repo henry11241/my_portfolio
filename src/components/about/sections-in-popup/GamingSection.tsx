@@ -13,7 +13,7 @@ export default function GamingSection() {
       </div>
       {/* Content */}
       <div className="content">
-        <header>
+        <header className="self-center">
           <h4>Gaming</h4>
         </header>
         <AnimateOnView>

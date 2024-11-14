@@ -49,11 +49,11 @@ export default function Section3() {
               <Popup title="Beyond Coding">
                 {/* Spotlights */}
                 <section className="spotlights w-full">
-                  {/* Gaming section */}
-                  <GamingSection />
-
                   {/* Table Tennis section */}
                   <TableTennisSection />
+
+                  {/* Gaming section */}
+                  <GamingSection />
 
                   {/* Personal Growth section */}
                   <PersonalGrowthSection />

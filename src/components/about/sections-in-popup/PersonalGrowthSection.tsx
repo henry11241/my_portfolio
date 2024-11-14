@@ -18,7 +18,7 @@ export default function PersonalGrowthSection() {
       </div>
       {/* Content */}
       <div className="content">
-        <header>
+        <header className="self-center">
           <h4>Personal Growth</h4>
         </header>
         <AnimateOnView>

@@ -11,13 +11,15 @@ export default function YoutubePlayer() {
   };
 
   const opts: YouTubeProps["opts"] = {
-    height: "500px",
+    height: "600px",
     width: "100%",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 0,
       mute: 1,
+      start: 156,
     },
+
   };
 
   return (
