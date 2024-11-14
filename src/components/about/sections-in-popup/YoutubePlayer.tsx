@@ -2,7 +2,6 @@
 
 import React from "react";
 import YouTube, { YouTubeProps } from "react-youtube";
-import styles from "./YoutubePlayer.module.css";
 
 export default function YoutubePlayer() {
   const onPlayerReady: YouTubeProps["onReady"] = (event) => {
@@ -12,8 +11,8 @@ export default function YoutubePlayer() {
   };
 
   const opts: YouTubeProps["opts"] = {
-    height: "500",
-    width: "670",
+    height: "500px",
+    width: "100%",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 0,
@@ -22,7 +21,7 @@ export default function YoutubePlayer() {
   };
 
   return (
-    <div className={styles.responsiveVideo}>
+    <div className="relative z-10">
       <YouTube videoId="_1DVqRYSGM4" opts={opts} onReady={onPlayerReady} />
     </div>
   );

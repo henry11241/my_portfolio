@@ -5,10 +5,12 @@ import FlashingText from "@/components/ui/FlashingText";
 export default function TableTennisSection() {
   return (
     <section className="flex items-center">
-      <AnimateOnView>
-        <YoutubePlayer />
-      </AnimateOnView>
       {/* Video */}
+      <div className="image">
+        <AnimateOnView>
+          <YoutubePlayer />
+        </AnimateOnView>
+      </div>
       {/* Content */}
       <div className="content">
         <header className="self-center">
